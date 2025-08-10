@@ -248,7 +248,40 @@
     </div>
   </div>
 </footer>
-
+<form name="catalogar" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="catalogar" />
+  
+  <label>
+    Tipo (Grupo ou Canal):<br>
+    <select name="tipo" required>
+      <option value="">Selecione...</option>
+      <option value="Grupo">Grupo</option>
+      <option value="Canal">Canal</option>
+    </select>
+  </label><br><br>
+  
+  <label>
+    Nome:<br>
+    <input type="text" name="nome" required />
+  </label><br><br>
+  
+  <label>
+    Link:<br>
+    <input type="url" name="link" required placeholder="https://t.me/..." />
+  </label><br><br>
+  
+  <label>
+    Categoria:<br>
+    <input type="text" name="categoria" />
+  </label><br><br>
+  
+  <label>
+    Descrição:<br>
+    <textarea name="descricao" rows="4"></textarea>
+  </label><br><br>
+  
+  <button type="submit">Enviar</button>
+</form>
 <!-- SCRIPTS (mínimo: controla popup e link) -->
 <script>
   (function(){
